@@ -1,0 +1,32 @@
+*{ margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+header {padding: 10px;} 
+header div h1,h2 { display: flex;
+    justify-content: center;
+}
+
+header ul  {list-style: none;
+display: flex;
+justify-content: flex-end;
+flex-direction: row;
+}
+
+header ul li {padding: 10px;}
+
+#small-box {direction: flex;
+
+flex-direction: row;
+flex-wrap: wrap;}
+
+footer {padding: 20px;
+margin: 5px;}
+
+footer h2 {display: flex;
+justify-content: flex-start;}
+
+footer ul {
+    list-style: none; 
+    display: flex;
+justify-content: flex-end;}
