@@ -1,13 +1,21 @@
 *{ margin: 0;
 padding: 0;
-box-sizing: border-box;}
-
-header {padding: 10px;} 
-header div h1,h2 { display: flex;
-    justify-content: center;
+box-sizing: border-box;
+font-family: Georgia, serif;
 }
 
-header ul  {list-style: none;
+
+header, footer {background-color: blueviolet; 
+    min-height: 15vh ;
+}
+
+header {padding: 10px;
+} 
+header div h1,h2 { display: flex;
+    justify-content: flex-start;
+}
+
+header nav ul {list-style: none;
 display: flex;
 justify-content: flex-end;
 flex-direction: row;
@@ -15,13 +23,43 @@ flex-direction: row;
 
 header ul li {padding: 10px;}
 
-#small-box {direction: flex;
+main {background-color:lightgreen;
+    min-height: 70vh;
+    position: relative;
+    }
+ 
+    .about-me {width: 33%;
+    border: 1px solid black;
+    padding-left: 10px;
+    
+ }
+#big-box{ 
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    }
 
-flex-direction: row;
-flex-wrap: wrap;}
+.button-1 {position:absolute;
+top: 75%;
+font-family:'Brush Script MT', cursive;
+font-size: 32px;
+
+}
+
+.small-box {display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; 
+
+    position: relative;
+}
+
+
+
 
 footer {padding: 20px;
-margin: 5px;}
+}
 
 footer h2 {display: flex;
 justify-content: flex-start;}
@@ -30,3 +68,14 @@ footer ul {
     list-style: none; 
     display: flex;
 justify-content: flex-end;}
+
+@media screen and (max-width:992px) {
+    section {
+        width:45%;
+    }
+}
+@media screen and (max-width:576px) {
+    section {
+        width:97%;
+    }
+}
