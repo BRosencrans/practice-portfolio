@@ -1,81 +1,109 @@
-*{ margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: Georgia, serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, serif;
 }
 
 
-header, footer {background-color: blueviolet; 
-    min-height: 15vh ;
+header,
+footer {
+    background-color: #A379C9;
+    min-height: 15vh;
 }
 
-header {padding: 10px;
-} 
-header div h1,h2 { display: flex;
+header {
+    padding: 10px;
+}
+
+header div h1,
+h2 {
+    display: flex;
     justify-content: flex-start;
 }
 
-header nav ul {list-style: none;
-display: flex;
-justify-content: flex-end;
-flex-direction: row;
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
 }
 
-header ul li {padding: 10px;}
+header ul li {
+    padding: 10px;
+}
 
-main {background-color:lightgreen;
+main {
+    background-color: #5EFC8D;
     min-height: 70vh;
-    position: relative;
-    }
- 
-    .about-me {width: 33%;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-me h3 {
+    text-align: start;
+}
+
+.about-me {
+    width: 33%;
     border: 1px solid black;
     padding-left: 10px;
-    
- }
-#big-box{ 
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    }
-
-.button-1 {position:absolute;
-top: 75%;
-font-family:'Brush Script MT', cursive;
-font-size: 32px;
 
 }
 
-.small-box {display: flex;
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#big-box {
+    height: 500px;
+    width: auto;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: #417B5A;
+    text-align: end;
+
+}
+
+
+
+.small-box {
+    display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 
-    position: relative;
 }
 
 
 
 
-footer {padding: 20px;
+footer {
+    padding: 20px;
 }
 
-footer h2 {display: flex;
-justify-content: flex-start;}
+footer h2 {
+    display: flex;
+    justify-content: flex-start;
+}
 
 footer ul {
-    list-style: none; 
+    list-style: none;
     display: flex;
-justify-content: flex-end;}
-
-@media screen and (max-width:992px) {
-    section {
-        width:45%;
-    }
+    justify-content: space-between;
+    margin: 5px;
 }
-@media screen and (max-width:576px) {
-    section {
-        width:97%;
+
+
+
+
+@media screen and (max-width: 980px) {
+    img {
+        width: 80%;
     }
+
 }
